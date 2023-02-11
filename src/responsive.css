@@ -1,0 +1,30 @@
+@media (max-width:420px) {
+
+    body {
+        background: url('../images/pattern-background-mobile.svg');
+        background-repeat:no-repeat;
+        background-size: 100%;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .container {
+        width: 350px;
+        height: 600px;
+    }
+
+    .change a {
+        margin-left: 5.2em;
+    }
+
+    .btn-1 {
+        width: 310px;
+    }
+
+    .btn-2 {
+        margin-top: 20px;
+    }
+
+    .attribution {
+        padding-top: 15%;
+    }
+}
