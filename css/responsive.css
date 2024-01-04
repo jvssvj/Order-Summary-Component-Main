@@ -1,0 +1,19 @@
+@media (max-width:420px) {
+    body {
+        background-image: url('../images/pattern-background-mobile.svg');
+    }
+}
+
+@media(max-width:345px) {
+    .card__summary__plan {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .card__summary__plan__button__change {
+        position: unset;
+        margin-right: 0;
+    }
+}

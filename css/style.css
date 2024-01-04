@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    /* ### Primary */
+    --Pale__blue: hsl(225, 100%, 94%);
+    --Bright__blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+    --Very__pale__blue: hsl(225, 100%, 98%);
+    --Desaturated__blue: hsl(224, 23%, 55%);
+    --Dark__blue: hsl(223, 47%, 23%);
+    --Purple__hover:hsl(245, 83%, 68%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale__blue);
+    font-size: 1rem;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin: 0em 1em 0em 1em;
+}
+
+.card__summary {
+    width: 100%;
+    max-width: 402px;
+    background-color: var(--Very__pale__blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card__summary__model__div {
+    max-height: 196px;
+}
+
+.card__summary__model__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card__summary__order {
+    padding: 2em;
+}
+
+.card__summary__txt {
+    text-align: center;
+}
+
+.card__summary__txt__title {
+    font-size: 1.5rem;
+    color: var(--Dark__blue);
+}
+
+.card__summary__txt__paragraph {
+    margin: 1.125rem 0rem;
+    color: var(--Desaturated__blue);
+    line-height: 25px;
+}
+
+.card__summary__plan {
+    display: flex;
+    align-items: center;
+    padding: .844rem;
+    background-color: hsla(225, 100%, 94%, 0.411);
+    border-radius: .5rem;
+    gap: 1.4rem;
+    position: relative;
+}
+
+.card__summary__plan__price__option,
+.card__summary__plan__price__value {
+    display: block;
+}
+
+.card__summary__plan__price__option {
+    font-size: 1rem;
+    color: var(--Dark__blue);
+    font-weight: 900;
+}
+
+.card__summary__plan__price__value {
+    font-size: 1rem;
+    color: var(--Desaturated__blue);
+}
+
+.card__summary__plan__button__change {
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 1.19rem;
+    color: var(--Bright__blue);
+}
+
+.card__summary__plan__button__change:hover {
+    color: var(--Purple__hover);
+}
+
+.card__summary__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment__button {
+    width: 100%;
+    margin: 1.2rem 0em;
+    font-weight: 700;
+    color: var(--Very__pale__blue);
+    height: 50px;
+    background-color: var(--Bright__blue);
+    border-radius: 10px;
+    white-space: pre-line;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.payment__button:hover {
+    background-color: var(--Purple__hover);
+    box-shadow: hsla(245, 83%, 68%, 0.397) 0px 7px 29px 0px;
+}
+
+.cancel__button {
+    background: none;
+    font-weight: 700;
+    color: var(--Desaturated__blue);
+    cursor: pointer;
+}
+
+.cancel__button:hover {
+    color: var(--Dark__blue);
+}
+
+.card__summary__plan__button__change,
+.payment__button,
+.cancel__button {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card__summary__plan__button__change:active,
+.payment__button:active, 
+.cancel__button:active {
+    transform: scale(0.92);
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--Dark__blue);
+    margin: 70em 1em 0em 1em;
+    padding: .5rem;
+}
+
+.attribution a {
+    color: var(--Bright__blue);
+}
