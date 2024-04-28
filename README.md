@@ -24,7 +24,7 @@
 <div align='center'>
   <h2>Preview</h2>
   <img src="./design/desktop-preview.jpg" alt="Order Summary Component Main Preview">
-  <p>Design preview for the Order Summary Component Main Challenge.</p>
+  <p>Design preview for the Order Summary Component Main challenge.</p>
 </div>
 
 <br>
